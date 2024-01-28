@@ -112,6 +112,7 @@ class BatchNorm(nn.Module):
         return exponential_average_factor, bn_training
 
     def _get_mean_var(self, x, dims):
+        # refer to https://github.com/ptrblck/pytorch_misc/blob/master/batch_norm_manual.py
         exponential_average_factor, bn_training = self._prepare_stats()
         if bn_training:
             mean = x.mean(dim=dims)
