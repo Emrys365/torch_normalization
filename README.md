@@ -2,6 +2,8 @@
 
 This repository provides purely PyTorch-based implementations of several normalization layers, including BatchNorm, GroupNorm, InstanceNorm, and LayerNorm. They are carefully implemented to match the official PyTorch implementations.
 
+![normalization layers explained](norm_explained.png)
+
 ## Install
 
 ```bash
